@@ -291,7 +291,7 @@ section {
 
 .project-card .btn-outline {
     align-self: flex-start;
-    margin-top: auto;
+    margin-top: 1.2rem;
 }
 
 .project-card>div {
@@ -673,6 +673,7 @@ footer {
         width: 100%;
         text-align: center;
         justify-content: center;
+        margin-top: 1.4rem;
     }
 
     .contact {
