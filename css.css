@@ -78,6 +78,35 @@ header {
     gap: 0.6rem;
 }
 
+.lang-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.1rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    font-size: 0.8rem;
+}
+
+.lang-toggle {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    font: inherit;
+    cursor: pointer;
+    padding: 0.1rem 0.2rem;
+}
+
+.lang-toggle.active {
+    color: #fff;
+    font-weight: 600;
+}
+
+.lang-separator {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .flag-guinea {
     display: inline-flex;
     border-radius: 4px;
