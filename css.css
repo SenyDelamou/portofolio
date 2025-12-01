@@ -632,6 +632,20 @@ footer {
         width: 220px;
         height: 220px;
     }
+
+    main {
+        padding: 0 1.25rem 3.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.8rem;
+        max-width: 100%;
+    }
+
+    .project-card {
+        padding: 1.8rem;
+    }
 }
 
 /* Responsive Design - Mobile */
@@ -744,6 +758,12 @@ footer {
         gap: 1.5rem;
     }
 
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+        max-width: 100%;
+    }
+
     /* Bouton "Voir le projet" responsive dans les cartes projets */
     .project-card .btn-outline {
         width: 100%;
@@ -763,8 +783,14 @@ footer {
 
 @media (max-width: 640px) {
     .project-card {
-        padding: 1.5rem;
+        padding: 1.4rem;
         border-radius: 1.4rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
+        max-width: 100%;
     }
 
     .section-block {
@@ -792,6 +818,7 @@ footer {
 
     .stats {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .stat {
@@ -821,6 +848,14 @@ footer {
     .pill {
         font-size: 0.8rem;
         padding: 0.3rem 0.7rem;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
     }
 
     h2 {
