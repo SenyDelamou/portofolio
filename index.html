@@ -43,7 +43,7 @@
                     </ul>
                 </nav>
                 <div class="nav-cta">
-                    <a class="btn" href="mailto:samakedelamou858@gmail.com" data-i18n="btn.talk">Discutons</a>
+                    <a class="btn" href="mailto:samakedelamou858@gmail.com" data-i18n="btn.emailNav">Email Samaké</a>
                     <div class="lang-switcher" aria-label="Changer de langue">
                         <button type="button" class="lang-toggle" data-lang="fr">FR</button>
                         <span class="lang-separator">·</span>
@@ -96,7 +96,7 @@
                 </div>
 
                 <div class="hero-actions">
-                    <a class="btn" href="mailto:samakedelamou858@gmail.com" data-i18n="btn.talk">Discutons</a>
+                    <button class="btn contact-toggle" type="button" data-i18n="btn.talk">Discutons</button>
                     <a class="btn-outline" href="CV/cv_Samaké_DELAMOU.pdf" download data-i18n="btn.downloadCV">Télécharger mon CV</a>
                     <a class="btn-outline btn-whatsapp" href="https://wa.me/224629403019" target="_blank" rel="noopener">
                         <span class="whatsapp-icon" aria-hidden="true">
@@ -105,8 +105,16 @@
                                     d="M16.04 4C9.4 4 4 9.37 4 16.02c0 2.11.56 4.06 1.53 5.77L4 28l6.34-1.51a11.9 11.9 0 005.7 1.46h.01c6.64 0 12.04-5.37 12.04-12.02C28.1 9.37 22.68 4 16.04 4zm.01 21.5h-.01c-1.87 0-3.7-.5-5.3-1.46l-.38-.23-3.76.9.8-3.66-.25-.38A9.53 9.53 0 016.5 16c0-5.25 4.28-9.52 9.55-9.52 5.25 0 9.54 4.27 9.55 9.52 0 5.25-4.29 9.52-9.55 9.52zm5.23-7.13c-.29-.14-1.7-.84-1.96-.93-.26-.1-.45-.14-.64.14-.19.29-.73.93-.9 1.12-.17.2-.34.22-.63.07-.29-.14-1.21-.44-2.3-1.4-.85-.76-1.42-1.7-1.58-1.98-.17-.29-.02-.45.13-.59.14-.14.29-.34.43-.51.14-.17.19-.29.29-.48.1-.2.05-.36-.03-.5-.07-.14-.64-1.54-.88-2.12-.23-.55-.47-.47-.64-.48h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43 0 1.43 1.03 2.81 1.17 3 .14.19 2.03 3.2 4.92 4.48.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.7-.69 1.94-1.35.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.33z" />
                             </svg>
                         </span>
-                        <span data-i18n="btn.whatsapp">WhatsApp · +224 629 403 019</span>
+                        <span data-i18n="btn.whatsapp">+224 629 403 019</span>
                     </a>
+
+                    <div class="contact-choice" id="contactChoice" aria-hidden="true">
+                        <p class="contact-choice__title" data-i18n="choice.title">Comment souhaitez-vous échanger&nbsp;?</p>
+                        <div class="contact-choice__actions">
+                            <a class="btn-outline" href="mailto:samakedelamou858@gmail.com" data-i18n="choice.email">Par e-mail</a>
+                            <a class="btn-outline btn-whatsapp" href="https://wa.me/224629403019" target="_blank" rel="noopener" data-i18n="choice.whatsapp">WhatsApp</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -261,7 +269,7 @@
                             d="M16.04 4C9.4 4 4 9.37 4 16.02c0 2.11.56 4.06 1.53 5.77L4 28l6.34-1.51a11.9 11.9 0 005.7 1.46h.01c6.64 0 12.04-5.37 12.04-12.02C28.1 9.37 22.68 4 16.04 4zm.01 21.5h-.01c-1.87 0-3.7-.5-5.3-1.46l-.38-.23-3.76.9.8-3.66-.25-.38A9.53 9.53 0 016.5 16c0-5.25 4.28-9.52 9.55-9.52 5.25 0 9.54 4.27 9.55 9.52 0 5.25-4.29 9.52-9.55 9.52zm5.23-7.13c-.29-.14-1.7-.84-1.96-.93-.26-.1-.45-.14-.64.14-.19.29-.73.93-.9 1.12-.17.2-.34.22-.63.07-.29-.14-1.21-.44-2.3-1.4-.85-.76-1.42-1.7-1.58-1.98-.17-.29-.02-.45.13-.59.14-.14.29-.34.43-.51.14-.17.19-.29.29-.48.1-.2.05-.36-.03-.5-.07-.14-.64-1.54-.88-2.12-.23-.55-.47-.47-.64-.48h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43 0 1.43 1.03 2.81 1.17 3 .14.19 2.03 3.2 4.92 4.48.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.7-.69 1.94-1.35.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.33z" />
                     </svg>
                 </span>
-                <span data-i18n="contact.whatsapp">Écrire sur WhatsApp · +224 629 403 019</span>
+                <span data-i18n="contact.whatsapp">+224 629 403 019</span>
             </a>
         </section>
     </main>
@@ -299,10 +307,14 @@
                 "hero.lead": "Architecte de données, concepteur de bases de données et analyste de données. J'accompagne les organisations dans la mise en place d'architectures data fiables et de tableaux de bord décisionnels.",
                 "hero.yearsLabel": "Années d'expérience",
                 "hero.projectsLabel": "Projets menés",
+                "btn.emailNav": "Email Samaké",
                 "btn.talk": "Discutons",
                 "btn.downloadCV": "Télécharger mon CV",
                 "btn.viewProject": "Voir le projet",
-                "btn.whatsapp": "WhatsApp · +224 629 403 019",
+                "btn.whatsapp": "+224 629 403 019",
+                "choice.title": "Comment souhaitez-vous échanger ?",
+                "choice.email": "Par e-mail",
+                "choice.whatsapp": "Par WhatsApp",
                 "skills.title": "⚒️ Compétences clés",
                 "skills.db.title": "Bases de données relationnelles",
                 "skills.db.text": "Schémas optimisés, procédures stockées, vues matérialisées et tuning des requêtes.",
@@ -325,7 +337,7 @@
                 "contact.title": "Travaillons ensemble",
                 "contact.text": "Disponible pour concevoir ou auditer vos bases de données, automatiser vos reportings et valoriser vos insights. Parlez-moi de vos enjeux, je vous réponds sous 24h avec un plan d'action clair.",
                 "contact.cta": "Écrire à Samaké",
-                "contact.whatsapp": "Écrire sur WhatsApp · +224 629 403 019",
+                "contact.whatsapp": "+224 629 403 019",
                 "footer.text": "© <span id=\"year\"></span> Samaké Delamou · Concepteur de bases de données • Analyste de données"
             },
             en: {
@@ -340,10 +352,14 @@
                 "hero.lead": "Data architect, database designer and data analyst. I help organizations build reliable data architectures and decision-making dashboards.",
                 "hero.yearsLabel": "Years of experience",
                 "hero.projectsLabel": "Projects delivered",
+                "btn.emailNav": "Email Samaké",
                 "btn.talk": "Let's talk",
                 "btn.downloadCV": "Download my CV",
                 "btn.viewProject": "View project",
-                "btn.whatsapp": "WhatsApp · +224 629 403 019",
+                "btn.whatsapp": "+224 629 403 019",
+                "choice.title": "How would you like to get in touch?",
+                "choice.email": "By email",
+                "choice.whatsapp": "Via WhatsApp",
                 "skills.title": "⚒️ Key skills",
                 "skills.db.title": "Relational databases",
                 "skills.db.text": "Optimised schemas, stored procedures, materialized views and query tuning.",
@@ -366,7 +382,7 @@
                 "contact.title": "Let's work together",
                 "contact.text": "Available to design or audit your databases, automate your reporting and turn your data into insights. Share your challenges and I will get back to you within 24 hours with a clear action plan.",
                 "contact.cta": "Email Samaké",
-                "contact.whatsapp": "Chat on WhatsApp · +224 629 403 019",
+                "contact.whatsapp": "+224 629 403 019",
                 "footer.text": "© <span id=\"year\"></span> Samaké Delamou · Database designer • Data analyst"
             }
         };
@@ -403,6 +419,26 @@
                 applyLanguage(lang);
             });
         });
+
+        // Choix du canal de contact (email / WhatsApp)
+        const contactToggle = document.querySelector('.contact-toggle');
+        const contactChoice = document.getElementById('contactChoice');
+
+        if (contactToggle && contactChoice) {
+            contactToggle.addEventListener('click', () => {
+                const isOpen = contactChoice.getAttribute('aria-hidden') === 'false';
+                contactChoice.setAttribute('aria-hidden', isOpen ? 'true' : 'false');
+                contactChoice.classList.toggle('open', !isOpen);
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!contactChoice.classList.contains('open')) return;
+                if (e.target === contactToggle || contactToggle.contains(e.target)) return;
+                if (contactChoice.contains(e.target)) return;
+                contactChoice.setAttribute('aria-hidden', 'true');
+                contactChoice.classList.remove('open');
+            });
+        }
 
         // Mobile Menu Logic
         const mobileToggle = document.querySelector('.mobile-toggle');
