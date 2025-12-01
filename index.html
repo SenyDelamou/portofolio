@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio · Samaké Delamou - Data Architect</title>
+    <title>Portfolio · Samaké Delamou - Architecte de données</title>
     <meta name="description"
         content="Concepteur de bases de données et analyste de données basé à Conakry. Spécialisé en SQL, Power BI, Python et Business Intelligence." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -74,6 +74,11 @@
                 </div>
             </div>
             <div class="hero-content">
+                <h1>Samaké Delamou</h1>
+                <p style="margin-top: 0.5rem; color: var(--muted); max-width: 40rem;">
+                    Architecte de données, concepteur de bases de données et analyste de données. J'accompagne les
+                    organisations dans la mise en place d'architectures data fiables et de tableaux de bord décisionnels.
+                </p>
                 <div class="stats">
                     <div class="stat">
                         <span>Années d'expérience</span>
@@ -127,7 +132,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <h3>Automatisation & desktop</h3>
+                    <h3>Automatisation & applications desktop</h3>
                     <p>Scripts Python, apps WinDev et intégrations planifiées pour connecter bases, rapports et
                         applications métiers.</p>
                     <div class="project-meta">
@@ -139,29 +144,40 @@
             </div>
         </section>
 
-        <!-- Projects Section (Unified) -->
+        <!-- Projects Section (Unified & Redesigned) -->
         <section id="projects">
             <h2>✨ Sélection de projets</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--muted);">
+                Un aperçu de mes réalisations en développement applicatif, automatisation et Business Intelligence
+                (Power BI). Chaque projet met en avant une problématique métier concrète et une solution data.
+            </p>
 
-            <!-- Projets traditionnels -->
-            <div class="projects">
+            <div class="projects-grid">
+                <!-- Projet 1 : Gestion des cotisations -->
                 <article class="project-card">
-                    <div>
+                    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80"
+                        alt="Gestion des cotisations" />
+                    <div class="project-content">
                         <h3>Gestion des cotisations</h3>
-                        <p>Application WinDev pour suivre adhésions, paiements et relances automatiques d'une
+                        <p>Application WinDev pour suivre les adhésions, paiements et relances automatiques d'une
                             association.</p>
                         <div class="project-meta">
                             <span class="pill">WinDev</span>
+                            <span class="pill">SQL</span>
+                            <span class="pill">Reporting</span>
                         </div>
                         <a class="btn-outline" href="#" target="_blank">Voir le projet</a>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80"
-                        alt="Gestion des cotisations" />
                 </article>
+
+                <!-- Projet 2 : Application de lecture de PDF -->
                 <article class="project-card">
-                    <div>
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80"
+                        alt="Application lecture PDF" />
+                    <div class="project-content">
                         <h3>Application de lecture de PDF</h3>
-                        <p>Application web Python pour annoter, résumer et partager des documents PDF volumineux.</p>
+                        <p>Application Python pour annoter, résumer et partager des documents PDF volumineux,
+                            pensée pour les équipes métiers.</p>
                         <div class="project-meta">
                             <span class="pill">Python</span>
                             <span class="pill">PyPDF</span>
@@ -169,155 +185,78 @@
                         </div>
                         <a class="btn-outline" href="#" target="_blank">Voir le projet</a>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80"
-                        alt="Application lecture PDF" />
                 </article>
+
+                <!-- Projet 3 : Smart Market -->
                 <article class="project-card">
-                    <div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+                        alt="Smart Market" />
+                    <div class="project-content">
                         <h3>Smart Market</h3>
                         <p>Suite d'outils Python pour anticiper les ventes, surveiller les stocks et piloter les
-                            campagnes.</p>
+                            campagnes marketing.</p>
                         <div class="project-meta">
                             <span class="pill">Python</span>
+                            <span class="pill">Analytics</span>
+                            <span class="pill">Streamlit</span>
                         </div>
                         <a class="btn-outline" href="https://smartmarketstream.streamlit.app/" target="_blank">Voir le
                             projet</a>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
-                        alt="Smart Market" />
                 </article>
-            </div>
 
-            <!-- Projets Power BI RH -->
-            <h3 style="margin-top: 4rem; margin-bottom: 1rem; text-align: center;">📊 Projets Power BI - Analyse des
-                Ressources Humaines</h3>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--muted);">
-                Tableaux de bord interactifs pour piloter les RH : suivi des effectifs, analyse du recrutement,
-                gestion des talents et indicateurs de performance.
-            </p>
-
-            <div class="grid" style="margin-top: 2rem;">
-                <article class="card">
+                <!-- Projet 4 : Dashboard KPIs RH -->
+                <article class="project-card">
                     <div
-                        style="height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        style="height: 220px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
                         📈
                     </div>
-                    <h3>Dashboard KPIs RH</h3>
-                    <p>Vue d'ensemble des indicateurs clés : effectifs, turnover, absentéisme, masse salariale et
-                        évolution des coûts RH.</p>
-                    <div class="project-meta">
-                        <span class="pill">Power BI</span>
-                        <span class="pill">DAX</span>
-                        <span class="pill">KPIs</span>
+                    <div class="project-content">
+                        <h3>Dashboard KPIs RH</h3>
+                        <p>Vue d'ensemble des effectifs, du turnover, de l'absentéisme et de la masse salariale pour
+                            piloter la fonction RH.</p>
+                        <div class="project-meta">
+                            <span class="pill">Power BI</span>
+                            <span class="pill">DAX</span>
+                            <span class="pill">KPIs</span>
+                        </div>
                     </div>
-                    <ul style="margin-top: 1rem; color: var(--muted); font-size: 0.9rem;">
-                        <li>✓ Suivi des effectifs par département</li>
-                        <li>✓ Analyse du turnover et rétention</li>
-                        <li>✓ Indicateurs d'absentéisme</li>
-                        <li>✓ Évolution de la masse salariale</li>
-                    </ul>
                 </article>
 
-                <article class="card">
+                <!-- Projet 5 : Analyse du recrutement -->
+                <article class="project-card">
                     <div
-                        style="height: 200px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        style="height: 220px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
                         🎯
                     </div>
-                    <h3>Analyse du Recrutement</h3>
-                    <p>Suivi complet du processus de recrutement : sources, délais, coûts et qualité des embauches.</p>
-                    <div class="project-meta">
-                        <span class="pill">Power BI</span>
-                        <span class="pill">Power Query</span>
-                        <span class="pill">Recrutement</span>
+                    <div class="project-content">
+                        <h3>Analyse du recrutement</h3>
+                        <p>Tableau de bord complet sur les sources de candidatures, les délais de recrutement et le coût
+                            par embauche.</p>
+                        <div class="project-meta">
+                            <span class="pill">Power BI</span>
+                            <span class="pill">Power Query</span>
+                            <span class="pill">Recrutement</span>
+                        </div>
                     </div>
-                    <ul style="margin-top: 1rem; color: var(--muted); font-size: 0.9rem;">
-                        <li>✓ Funnel de recrutement</li>
-                        <li>✓ Time-to-hire par poste</li>
-                        <li>✓ Coût par embauche</li>
-                        <li>✓ Efficacité des sources de recrutement</li>
-                    </ul>
                 </article>
 
-                <article class="card">
+                <!-- Projet 6 : Gestion de la formation -->
+                <article class="project-card">
                     <div
-                        style="height: 200px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        style="height: 220px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
                         🎓
                     </div>
-                    <h3>Gestion de la Formation</h3>
-                    <p>Pilotage du plan de formation : budget, participation, évaluation et impact sur les compétences.
-                    </p>
-                    <div class="project-meta">
-                        <span class="pill">Power BI</span>
-                        <span class="pill">DAX</span>
-                        <span class="pill">Formation</span>
+                    <div class="project-content">
+                        <h3>Gestion de la formation</h3>
+                        <p>Dashboard RH pour suivre le budget, la participation et l'impact des formations sur les
+                            compétences.</p>
+                        <div class="project-meta">
+                            <span class="pill">Power BI</span>
+                            <span class="pill">DAX</span>
+                            <span class="pill">Formation</span>
+                        </div>
                     </div>
-                    <ul style="margin-top: 1rem; color: var(--muted); font-size: 0.9rem;">
-                        <li>✓ Taux de participation aux formations</li>
-                        <li>✓ Budget formation par département</li>
-                        <li>✓ Évaluation des formations</li>
-                        <li>✓ Cartographie des compétences</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <div
-                        style="height: 200px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
-                        ⭐
-                    </div>
-                    <h3>Performance & Talents</h3>
-                    <p>Évaluation des performances, identification des talents et planification de la succession.</p>
-                    <div class="project-meta">
-                        <span class="pill">Power BI</span>
-                        <span class="pill">Talent Management</span>
-                        <span class="pill">Analytics</span>
-                    </div>
-                    <ul style="margin-top: 1rem; color: var(--muted); font-size: 0.9rem;">
-                        <li>✓ Matrice 9-box des talents</li>
-                        <li>✓ Suivi des évaluations annuelles</li>
-                        <li>✓ Identification des hauts potentiels</li>
-                        <li>✓ Plans de succession</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <div
-                        style="height: 200px; background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
-                        💰
-                    </div>
-                    <h3>Analyse de la Rémunération</h3>
-                    <p>Équité salariale, benchmarking et analyse des écarts de rémunération par fonction et ancienneté.
-                    </p>
-                    <div class="project-meta">
-                        <span class="pill">Power BI</span>
-                        <span class="pill">Compensation</span>
-                        <span class="pill">Équité</span>
-                    </div>
-                    <ul style="margin-top: 1rem; color: var(--muted); font-size: 0.9rem;">
-                        <li>✓ Analyse des écarts salariaux</li>
-                        <li>✓ Benchmarking de marché</li>
-                        <li>✓ Évolution des salaires</li>
-                        <li>✓ Ratio de compression salariale</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <div
-                        style="height: 200px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
-                        📅
-                    </div>
-                    <h3>Gestion du Temps & Présence</h3>
-                    <p>Suivi des heures travaillées, congés, absences et analyse de la productivité.</p>
-                    <div class="project-meta">
-                        <span class="pill">Power BI</span>
-                        <span class="pill">Time Tracking</span>
-                        <span class="pill">Productivité</span>
-                    </div>
-                    <ul style="margin-top: 1rem; color: var(--muted); font-size: 0.9rem;">
-                        <li>✓ Suivi des heures supplémentaires</li>
-                        <li>✓ Gestion des congés</li>
-                        <li>✓ Analyse de l'absentéisme</li>
-                        <li>✓ Taux de présence par équipe</li>
-                    </ul>
                 </article>
             </div>
         </section>

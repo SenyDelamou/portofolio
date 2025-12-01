@@ -400,6 +400,14 @@ section {
     margin-top: 1rem;
 }
 
+/* Grille unifiée des projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
 .stats {
     display: flex;
     flex-wrap: wrap;
@@ -658,6 +666,13 @@ footer {
     .project-card {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    /* Bouton "Voir le projet" responsive dans les cartes projets */
+    .project-card .btn-outline {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 
     .contact {
