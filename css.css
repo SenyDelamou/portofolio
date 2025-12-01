@@ -330,6 +330,17 @@ section {
     transform: translateY(-2px);
 }
 
+.btn-whatsapp {
+    border-color: #25d366;
+    color: #25d366;
+}
+
+.btn-whatsapp:hover {
+    border-color: #25d366;
+    color: #fff;
+    background: linear-gradient(120deg, #25d366, #128c7e);
+}
+
 .project-card .btn-outline {
     align-self: flex-start;
     margin-top: 1.2rem;
