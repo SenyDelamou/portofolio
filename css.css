@@ -439,23 +439,6 @@ blockquote {
     padding: 1.8rem;
     border-radius: 1.2rem;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border);
-    min-height: 200px;
-    position: relative;
-}
-
-blockquote::before {
-    content: "" ";
- font-size: 3rem;
-    position: absolute;
-    top: 1rem;
-    left: 1.2rem;
-    color: rgba(255, 255, 255, 0.15);
-}
-
-blockquote footer {
-    margin-top: 1.2rem;
-    color: var(--muted);
     font-size: 0.95rem;
 }
 
